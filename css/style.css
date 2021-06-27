@@ -19,7 +19,7 @@ body {
     body main section {
       margin: 5% 0; }
       body main section .d-flex .fotoPresentacion {
-        width: 0%;
+        width: 40%;
         transition: 600ms; }
         body main section .d-flex .fotoPresentacion img {
           border-radius: 10%;
