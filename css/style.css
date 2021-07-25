@@ -1,25 +1,48 @@
+*{
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #dadada; }
-  body header {
-    background-image: url("../multimedia/portada.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 35vh; }
-    nav{
-      background-color: #ee98fb;}
-    nav a{
-      color: white;
-      transition: 600ms;}
-      nav a:hover{
-      transition: 600ms;
-      color: #883997;
-      transform: scale(1.2);}
+  background-color: #E5E5E5; }
+  body .color{
+    color: #002984;
+    font-weight: bolder;
+  }
+  body .color-n{
+    color: #883997;
+    font-weight: bolder;
+  }
+  body nav{
+      background-color: #FFFFFF;}
+      body nav a img{
+          width: 25px; }
   body main {
-    margin: 0 10%; }
+    margin: 0 15%; }
+    body main .carousel{
+      margin-top: 10%;
+    }
+      body main .carousel .carousel-caption{
+        background-color: rgba(186, 104, 200, 0.6);
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding-top: 0;        
+        padding-bottom: .6rem;
+      }
+      .carousel-indicators{
+        margin-bottom: 0;
+      }
     body main section {
       margin: 5% 0; }
+      body main .inicio{
+        background-color: #F1FFFF;
+        padding: 5%;
+      }
+      body main .inicio h2{
+        font-size: 1.75rem;
+      }
       body main section .d-flex .fotoPresentacion {
-        width: 40%;
+        width: 30%;
         transition: 600ms; }
         body main section .d-flex .fotoPresentacion img {
           border-radius: 10%;
@@ -27,8 +50,7 @@ body {
           .fotoPresentacion:hover{
             width: 200px;
             transition: 200ms;
-            transform: scale(1.2);
-          }
+            transform: scale(1.2);          }
       body main section .d-flex .parPresentacion {
         width: 75%;
         margin-left: 5%; }
@@ -43,9 +65,36 @@ body {
     background-color: #883997;
     font-style: #dadada; }
 .btn{
-  background-color: #ee98fb !important;
-  border-color: #ee98fb !important;
+  background-color: #883997 !important;
+  border-color: #883997 !important;
 }
 .btn:hover{
-  background-color: #883997 !important;
+  background-color: #ee98fb !important;
+}
+.formulario{
+  width: 100%;
+  background-color: #FFFFFF;
+  box-shadow: 0.2px 5px 15px black;
+}
+
+@media only screen and (max-width: 767px) {
+  .d_none{
+    display: none;
+  }
+}
+
+h2{
+  text-align: left;
+  color: #002984;
+}
+.logo{
+  width: 200px;
+}
+.menu{
+float: right;
+}
+.navbar-toggler{
+  background-image: url(../multimedia/Icons/vector1.png);
+  background-repeat: no-repeat;
+  background-size: inherit;
 }
